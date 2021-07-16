@@ -41,6 +41,7 @@
       padding: 50px 15px;
       margin: 0 auto 30px auto;
       border-radius: 3px;
+
     }
 
     .testimonial-view.top-margin .testimonial-block_user {
@@ -109,7 +110,12 @@
     .testimonial-block {
       padding: 15px;
       margin: 50px 15px;
-      background: #fff;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(to right bottom,
+          rgba(255, 255, 255, 0.7),
+          rgba(255, 255, 255, 0.3));
+      backdrop-filter: blur(2rem);
+      border-radius: 2rem;
       color: #333;
       -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
       box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
@@ -412,7 +418,7 @@
   </div>
 
   <!-- Testimonials section-->
-  <section id="testimonials" class="body" style="background: rgb(202, 245, 245);">
+  <section id="testimonials" class="body" style="background: linear-gradient(to right top, #65dfc9, #6cdbeb);">
     <div class="container">
       <!-- heading -->
       <h1 class="section-header h1 p-5 pb-3 text-center" style=" color: #e33664;">TESTIMONIALS</h1>
