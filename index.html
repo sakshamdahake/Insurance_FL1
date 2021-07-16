@@ -6,17 +6,193 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css">
+
   <!-- Bootstrap CSS -->
+
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- Custom CSS -->
-  <link href="assets/css/style.css">
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='' rel='stylesheet'>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+
+    body {
+      font-family: "Roboto", sans-serif;
+
+      height: 100vh;
+      position: relative;
+    }
+
+    .body {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .primary-color {
+      color: #FCA737;
+    }
+
+    .testimonial-view {
+      max-width: 900px;
+      padding: 50px 15px;
+      margin: 0 auto 70px auto;
+      border-radius: 3px;
+    }
+
+    .testimonial-view.top-margin .testimonial-block_user {
+      margin-top: -60px;
+    }
+
+    @media (min-width: 900px) {
+      .testimonial-view.top-margin .testimonial-block_user {
+        margin-top: -100px;
+      }
+    }
+
+    .testimonial-view img.left-quote {
+      opacity: 0.01;
+      width: 20%;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      position: absolute;
+      left: 40%;
+    }
+
+    @media (min-width: 900px) {
+      .testimonial-view .carousel-control-prev {
+        left: -50px;
+      }
+
+      .testimonial-view .carousel-control-next {
+        right: -50px;
+      }
+
+      .testimonial-view .carousel-control-next-icon,
+      .testimonial-view .carousel-control-prev-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .section-header,
+    .testimonial-block_user_info_name {
+      font-weight: bold;
+      text-align: center;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-header:after,
+    .testimonial-block_user_info_name:after {
+      content: "";
+      height: 4px;
+      width: 100px;
+      background-color: #FCA737;
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 50px);
+    }
+
+    .testimonial-block {
+      padding: 15px;
+      margin: 50px 15px;
+      background: #fff;
+      color: #333;
+      -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (min-width: 900px) {
+      .testimonial-block {
+        padding: 50px;
+        margin: 50px;
+      }
+    }
+
+    .testimonial-block .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      place-items: center;
+    }
+
+    .testimonial-block .testimonial-block_user {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .testimonial-block .testimonial-block_user .testimonial-block_user_image {
+      position: relative;
+      margin: 0 15px 30px 15px;
+    }
+
+    .testimonial-block .testimonial-block_user .testimonial-block_user_image img {
+      height: 170px;
+      width: 170px;
+      border: 7px solid #FFDFB8;
+      border-radius: 170px;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-block .testimonial-block_user .testimonial-block_user_info .testimonial-block_user_info_name {
+      margin-bottom: 10px;
+    }
+
+    .testimonial-block .testimonial-block_user .testimonial-block_user_info .testimonial-block_user_info_name:after {
+      width: 50px;
+      left: calc(50% - 25px);
+    }
+
+    .testimonial-block .testimonial-block_content {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .top-margin .testimonial-block .row {
+      place-items: normal;
+    }
+
+    .cstm-txt-align{
+      top: 40%;
+    }
+
+    @media (max-width: 700px) {
+      .cstm-txt-align{
+      top: 10%;
+    }
+    }
+
+    @media (max-width: 400px) {
+      .cstm-txt-align{
+      top: 0%;
+    }
+    }
+
+  </style>
+  <script type='text/javascript' src=''></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'>
+  </script>
+
 
   <title>Brand</title>
 </head>
 
-<body>
+<body oncontextmenu='return false' class='snippet-body'>
   <!-- NavBar 1 -->
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
@@ -130,113 +306,222 @@
   </div>
 
   <!-- Products Cards with Heading -->
-
-  <!-- Heading -->
-  <p class="h1 p-5 pb-3" style=" color: #e33664;">PRODUCTS</p>
-  <!-- Cards -->
-  <div class="p-5 pt-0 row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/card-car.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a href="#" class="link-primary text-decoration-none">
-            <h5 class="card-title">CAR INSURANCE</h5>
-          </a>
-          <p class="card-text">Insurance fraud puts an extra $70 on the price of every annual car insurance premium.</p>
+  <div>
+    <!-- Heading -->
+    <p class="h1 p-5 pb-3 text-center" style=" color: #e33664;"><b>PRODUCTS</b></p>
+    <!-- Cards -->
+    <div class="p-5 pt-0 row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card-car.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="link-primary text-decoration-none">
+              <h5 class="card-title">CAR INSURANCE</h5>
+            </a>
+            <p class="card-text">Insurance fraud puts an extra $70 on the price of every annual car insurance premium.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/card-life.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a href="#" class="link-primary text-decoration-none">
-            <h5 class="card-title">LIFE INSURANCE</h5>
-          </a>
-          <p class="card-text">If you have a partner and children, then the two of you should think about life
-            insurance.</p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card-life.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="link-primary text-decoration-none">
+              <h5 class="card-title">LIFE INSURANCE</h5>
+            </a>
+            <p class="card-text">If you have a partner and children, then the two of you should think about life
+              insurance.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/card-home.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a href="#" class="link-primary text-decoration-none">
-            <h5 class="card-title">HOME INSURANCE</h5>
-          </a>
-          <p class="card-text">TWe'll rebuild or repair your home if it's damaged or destroyed.</p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card-home.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="link-primary text-decoration-none">
+              <h5 class="card-title">HOME INSURANCE</h5>
+            </a>
+            <p class="card-text">TWe'll rebuild or repair your home if it's damaged or destroyed.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/card-travel.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a href="#" class="link-primary text-decoration-none">
-            <h5 class="card-title">TRAVEL INSURANCE</h5>
-          </a>
-          <p class="card-text">We can help you find the best plan for your trip and your budget.</p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card-travel.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="link-primary text-decoration-none">
+              <h5 class="card-title">TRAVEL INSURANCE</h5>
+            </a>
+            <p class="card-text">We can help you find the best plan for your trip and your budget.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/card-business.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a href="#" class="link-primary text-decoration-none">
-            <h5 class="card-title">BUSINESS INSURANCE</h5>
-          </a>
-          <p class="card-text">In truth, there are certain forms of insurance that are an absolute requirement for all
-            businesses.</p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card-business.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="link-primary text-decoration-none">
+              <h5 class="card-title">BUSINESS INSURANCE</h5>
+            </a>
+            <p class="card-text">In truth, there are certain forms of insurance that are an absolute requirement for all
+              businesses.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/card-landlord.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <a href="#" class="link-primary text-decoration-none">
-            <h5 class="card-title">LANDLORD INSURANCE</h5>
-          </a>
-          <p class="card-text">Our rental property insurance protects your property from damages.</p>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/img/card-landlord.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <a href="#" class="link-primary text-decoration-none">
+              <h5 class="card-title">LANDLORD INSURANCE</h5>
+            </a>
+            <p class="card-text">Our rental property insurance protects your property from damages.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Contact Us Section -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/img/img_cs_cont.jpg" class="d-block w-100" alt="bg" style="opacity: 0.5;">
-        <div class="carousel-caption p-5" style=" top: 30%; bottom: auto; color: black;">
-          <h1 class="m-4 p-4 pb-1">Find Information And Get Free</h1>
-          <h2 class="">Insurance Quotes.</h2>
-          <a href="#" class="p-3 px-5 m-5 btn btn-primary active btn-lg" role="button" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Contact Us</a>
-        </div>
-      </div>
+
+  <div class="card bg-dark text-white" style="border: none;">
+    <img src="./assets/img/img_cs_cont.jpg" class="card-img" alt="section-bg" style="opacity: 0.5;">
+    <div class="card-img-overlay text-center cstm-txt-align">
+      <h1 class="card-text">Find Information And Get Free</h1>
+      <h2 class="card-text">Insurance Quotes.</h2>
+      <a href="#" class="p-2 px-4  btn btn-primary active btn-lg card-text" role="button" data-bs-toggle="button"
+        autocomplete="off" aria-pressed="true">Contact Us</a>
     </div>
   </div>
 
+  <!-- Testimonials section-->
+  <section class="body" style="background: rgb(202, 245, 245);">
+    <div class="container">
+      <!-- heading -->
+      <h1 class="section-header h1 p-5 pb-3 text-center" style=" color: #e33664;">TESTIMONIALS</h1>
+      <p class="text-muted text-center">What people say</p>
+      <div class="testimonial-view">
+        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-block">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="testimonial-block_user">
+                      <div class="testimonial-block_user_image">
+                        <img src="https://i.imgur.com/R63flEo.jpg" alt="User">
+                      </div>
+                      <div class="testimonial-block_user_info">
+                        <h2 class="testimonial-block_user_info_name">Krishna</h2>
+                        <h4>Customer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="testimonial-block_content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequuntur repellendus nemo
+                        suscipit explicabo veniam similique quaerat vitae! Alias reprehenderit aliquam temporibus porro
+                        iste corrupti laboriosam nihil eos? Nemo ratione, provident! Suscipit, accusantium. Molestias,
+                        reiciendis, in nihil perferendis similique voluptas aliquam, nisi consectetur eum, atque nemo
+                        sint. Nostrum, reprehenderit, quod.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-block">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="testimonial-block_user">
+                      <div class="testimonial-block_user_image">
+                        <img src="https://i.imgur.com/G8pFZ8p.jpg" alt="User">
+                      </div>
+                      <div class="testimonial-block_user_info">
+                        <h2 class="testimonial-block_user_info_name">Himanshu</h2>
+                        <h4>Customer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="testimonial-block_content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequuntur repellendus nemo
+                        suscipit explicabo veniam similique quaerat vitae! Alias reprehenderit aliquam temporibus porro
+                        iste corrupti laboriosam nihil eos? Nemo ratione, provident! Suscipit, accusantium. Molestias,
+                        reiciendis, in nihil perferendis similique voluptas aliquam, nisi consectetur eum, atque nemo
+                        sint. Nostrum, reprehenderit, quod.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-block">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="testimonial-block_user">
+                      <div class="testimonial-block_user_image">
+                        <img src="https://i.imgur.com/XePzDSG.jpg" alt="User">
+                      </div>
+                      <div class="testimonial-block_user_info">
+                        <h2 class="testimonial-block_user_info_name">Aliya</h2>
+                        <h4>Customer</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="testimonial-block_content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequuntur repellendus nemo
+                        suscipit explicabo veniam similique quaerat vitae! Alias reprehenderit aliquam temporibus porro
+                        iste corrupti laboriosam nihil eos? Nemo ratione, provident! Suscipit, accusantium. Molestias,
+                        reiciendis, in nihil perferendis similique voluptas aliquam, nisi consectetur eum, atque nemo
+                        sint. Nostrum, reprehenderit, quod.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark sticky-bottom text-light text-center">
+    THIS <br> IS <br> THE <br>FOOTER <br>OF <br> THIS <br> WEB <br> PAGE.
+  </footer>
 
-
-
-
+  <script src="./assets/js/script.js"></script>
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+  </script> -->
+
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+
+  <script type='text/javascript'></script>
+
 </body>
 
 </html>
