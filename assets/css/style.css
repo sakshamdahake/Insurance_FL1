@@ -2,14 +2,14 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background: #EDEEEF;
-    height: 100vh;
-    position: relative;
+
+    /* height: 100vh; */
+    /* position: relative; */
 }
 
 .body {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px; */
+    padding-bottom: 10px;
 }
 
 .primary-color {
@@ -19,8 +19,9 @@ body {
 .testimonial-view {
     max-width: 900px;
     padding: 50px 15px;
-    margin: 0 auto 70px auto;
+    margin: 0 auto 30px auto;
     border-radius: 3px;
+
 }
 
 .testimonial-view.top-margin .testimonial-block_user {
@@ -58,6 +59,14 @@ body {
     }
 }
 
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
 .section-header,
 .testimonial-block_user_info_name {
     font-weight: bold;
@@ -81,7 +90,12 @@ body {
 .testimonial-block {
     padding: 15px;
     margin: 50px 15px;
-    background: #fff;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.863),
+            rgba(255, 255, 255, 0.3));
+    backdrop-filter: blur(2rem);
+    border-radius: 2rem;
     color: #333;
     -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
@@ -138,3 +152,83 @@ body {
     place-items: normal;
 }
 
+.cstm-txt-align {
+    top: 40%;
+}
+
+@media (max-width: 700px) {
+    .cstm-txt-align {
+        top: 10%;
+    }
+}
+
+@media (max-width: 400px) {
+    .cstm-txt-align {
+        top: 0%;
+    }
+}
+
+/* Custom Scrollbar */
+/* total width */
+body::-webkit-scrollbar {
+    background-color: #fff;
+    width: 16px
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fff
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+    border: 4px solid #fff
+}
+
+#contact .card:hover i,
+#contact .card:hover h4 {
+    color: #87d37c;
+}
+
+/* for input fielsds */
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 10px;
+    transition: all 200ms;
+    opacity: 0.5;
+    color: rgb(0, 0, 0)
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 69%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+    top: 10px
+}
+
+.form-control {
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: transparent
+}
+
+.form-control:focus {
+    border: 0;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-color: rgb(0, 0, 0);
+    outline: 0;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 0 0 0.2rem transparent
+}

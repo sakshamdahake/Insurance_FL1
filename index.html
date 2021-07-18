@@ -6,8 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Custom CSS -->
-  <link href="assets/css/style.css">
+
 
   <!-- Bootstrap CSS -->
 
@@ -21,242 +20,10 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
-  <style>
-    @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    body {
-      font-family: "Roboto", sans-serif;
 
-      /* height: 100vh; */
-      /* position: relative; */
-    }
-
-    .body {
-      /* padding-top: 100px; */
-      padding-bottom: 10px;
-    }
-
-    .primary-color {
-      color: #FCA737;
-    }
-
-    .testimonial-view {
-      max-width: 900px;
-      padding: 50px 15px;
-      margin: 0 auto 30px auto;
-      border-radius: 3px;
-
-    }
-
-    .testimonial-view.top-margin .testimonial-block_user {
-      margin-top: -60px;
-    }
-
-    @media (min-width: 900px) {
-      .testimonial-view.top-margin .testimonial-block_user {
-        margin-top: -100px;
-      }
-    }
-
-    .testimonial-view img.left-quote {
-      opacity: 0.01;
-      width: 20%;
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-      position: absolute;
-      left: 40%;
-    }
-
-    @media (min-width: 900px) {
-      .testimonial-view .carousel-control-prev {
-        left: -50px;
-      }
-
-      .testimonial-view .carousel-control-next {
-        right: -50px;
-      }
-
-      .testimonial-view .carousel-control-next-icon,
-      .testimonial-view .carousel-control-prev-icon {
-        width: 40px;
-        height: 40px;
-      }
-    }
-
-    .carousel-control-next-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    }
-
-    .carousel-control-prev-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
-
-    .section-header,
-    .testimonial-block_user_info_name {
-      font-weight: bold;
-      text-align: center;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      position: relative;
-    }
-
-    .section-header:after,
-    .testimonial-block_user_info_name:after {
-      content: "";
-      height: 4px;
-      width: 100px;
-      background-color: #FCA737;
-      position: absolute;
-      bottom: 0;
-      left: calc(50% - 50px);
-    }
-
-    .testimonial-block {
-      padding: 15px;
-      margin: 50px 15px;
-      background: rgb(255, 255, 255);
-      background: linear-gradient(to right bottom,
-          rgba(255, 255, 255, 0.863),
-          rgba(255, 255, 255, 0.3));
-      backdrop-filter: blur(2rem);
-      border-radius: 2rem;
-      color: #333;
-      -webkit-box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
-      box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.15);
-    }
-
-    @media (min-width: 900px) {
-      .testimonial-block {
-        padding: 50px;
-        margin: 50px;
-      }
-    }
-
-    .testimonial-block .row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      place-items: center;
-    }
-
-    .testimonial-block .testimonial-block_user {
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .testimonial-block .testimonial-block_user .testimonial-block_user_image {
-      position: relative;
-      margin: 0 15px 30px 15px;
-    }
-
-    .testimonial-block .testimonial-block_user .testimonial-block_user_image img {
-      height: 170px;
-      width: 170px;
-      border: 7px solid #FFDFB8;
-      border-radius: 170px;
-      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .testimonial-block .testimonial-block_user .testimonial-block_user_info .testimonial-block_user_info_name {
-      margin-bottom: 10px;
-    }
-
-    .testimonial-block .testimonial-block_user .testimonial-block_user_info .testimonial-block_user_info_name:after {
-      width: 50px;
-      left: calc(50% - 25px);
-    }
-
-    .testimonial-block .testimonial-block_content {
-      text-align: center;
-      font-size: 18px;
-    }
-
-    .top-margin .testimonial-block .row {
-      place-items: normal;
-    }
-
-    .cstm-txt-align {
-      top: 40%;
-    }
-
-    @media (max-width: 700px) {
-      .cstm-txt-align {
-        top: 10%;
-      }
-    }
-
-    @media (max-width: 400px) {
-      .cstm-txt-align {
-        top: 0%;
-      }
-    }
-
-    /* Custom Scrollbar */
-    /* total width */
-    body::-webkit-scrollbar {
-      background-color: #fff;
-      width: 16px
-    }
-
-    body::-webkit-scrollbar-track {
-      background-color: #fff
-    }
-
-    body::-webkit-scrollbar-thumb {
-      background-color: #babac0;
-      border-radius: 16px;
-      border: 4px solid #fff
-    }
-
-    #contact .card:hover i,
-    #contact .card:hover h4 {
-      color: #87d37c;
-    }
-
-    /* for input fielsds */
-
-    .form-group {
-      position: relative;
-      margin-bottom: 1.5rem
-    }
-
-    .form-control-placeholder {
-      position: absolute;
-      top: 0;
-      padding: 7px 0 0 10px;
-      transition: all 200ms;
-      opacity: 0.5;
-      color: rgb(0, 0, 0)
-    }
-
-    .form-control:focus+.form-control-placeholder,
-    .form-control:valid+.form-control-placeholder {
-      font-size: 69%;
-      transform: translate3d(0, -100%, 0);
-      opacity: 1;
-      top: 10px
-    }
-
-    .form-control {
-      border: 0;
-      outline: 0;
-      border-bottom: 2px solid rgb(0, 0, 0);
-      font-size: 16px;
-      color: rgb(0, 0, 0);
-      background-color: transparent
-    }
-
-    .form-control:focus {
-      border: 0;
-      color: rgb(0, 0, 0);
-      background-color: transparent;
-      border-color: rgb(0, 0, 0);
-      outline: 0;
-      border-bottom: 2px solid rgb(0, 0, 0);
-      box-shadow: 0 0 0 0.2rem transparent
-    }
-  </style>
   <script type='text/javascript' src=''></script>
   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
   <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'>
@@ -578,7 +345,8 @@
 
     <!-- Form section -->
 
-    <form class="container col-lg-6 p-5 shadow p-3 mb-5" style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
+    <form class="container col-lg-6 p-5 shadow p-3 mb-5"
+      style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
 
       <div class="row">
         <div class="col-md-6 mx-auto">
@@ -588,9 +356,9 @@
               class="form-control-placeholder" for="name">Email</label> </div>
           <div class="form-group"> <input type="text" id="city" class="form-control" required> <label
               class="form-control-placeholder" for="name">City</label> </div>
-          <div class="form-group"> <textarea  id="message" class="form-control" rows="1" required></textarea> <label
-              class="form-control-placeholder" for="message">Message</label> 
-            </div>
+          <div class="form-group"> <textarea id="message" class="form-control" rows="1" required></textarea> <label
+              class="form-control-placeholder" for="message">Message</label>
+          </div>
         </div>
       </div>
 
@@ -604,7 +372,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 my-5">
-          <div class="card border-0" style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
+          <div class="card border-0"
+            style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
             <div class="card-body text-center">
               <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
               <h4 class="text-uppercase mb-5">call us</h4>
@@ -613,7 +382,8 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 my-5">
-          <div class="card border-0" style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
+          <div class="card border-0"
+            style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
             <div class="card-body text-center">
               <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
               <h4 class="text-uppercase mb-5">office loaction</h4>
@@ -622,7 +392,8 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 my-5">
-          <div class="card border-0" style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
+          <div class="card border-0"
+            style="border-radius: 2rem; background-color:#a3a3a32a; backdrop-filter: blur(1rem);">
             <div class="card-body text-center">
               <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
               <h4 class="text-uppercase mb-5">email</h4>
