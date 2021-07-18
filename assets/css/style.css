@@ -242,6 +242,7 @@ body::-webkit-scrollbar-thumb {
     right: 8px;
     float: right;
     z-index: 5;
+    width: 100%;
 }
 
 .whatsapp img{
@@ -260,11 +261,13 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     /* (A2) DIMENSIONS + BACKGROUND */
     position: relative;
+    float: right;
     right: 10px;
     background: #1ea73b;
     padding: 20px;
     border-radius: 10px;
     max-width: 320px;
+    margin-right: 40px;
   }
 
 
