@@ -232,3 +232,42 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 2px solid rgb(0, 0, 0);
     box-shadow: 0 0 0 0.2rem transparent
 }
+
+
+.whatsapp{
+    
+    position: -webkit-sticky; /* Safari */
+    position : sticky;
+    bottom:8px;
+    right: 8px;
+    float: right;
+    z-index: 5;
+}
+
+.whatsapp img{
+    max-height: 50px;
+    max-width: 50px;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+}
+
+.speech {
+    /* (A1) FONT */
+    
+    font-family: arial, sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    /* (A2) DIMENSIONS + BACKGROUND */
+    position: relative;
+    right: 10px;
+    background: #1ea73b;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 320px;
+  }
+
+
+
+
+
