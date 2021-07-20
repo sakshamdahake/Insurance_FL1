@@ -27,3 +27,6 @@ function validateForm() {
     }
     document.querySelector('.status').innerHTML = "Sending...";
   }
+
+
+
