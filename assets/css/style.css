@@ -270,7 +270,10 @@ body::-webkit-scrollbar-thumb {
     margin-right: 40px;
   }
 
-
+  .modal-backdrop
+  {
+      opacity:0.9 !important;
+  }
 
 
 
