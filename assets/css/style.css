@@ -275,5 +275,19 @@ body::-webkit-scrollbar-thumb {
       opacity:0.9 !important;
   }
 
+  .logo-text{
+    width: 128px;
+    height: 35px;
+    
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    
+    color: #D8C3A5;
+  }
+
 
 
