@@ -16,6 +16,27 @@ body {
     color: #FCA737;
 }
 
+.bg-color{
+    background-color: #EAE7DC;
+}
+
+.section-heading-text{
+    width: 313px;
+    height: 252px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    color: #E85A4F;
+}
+
+.heading-bar{
+    width: 184px;
+    height: 0px;
+    border: 8px solid #D8C3A5;
+}
+
 .testimonial-view {
     max-width: 900px;
     padding: 50px 15px;
@@ -278,14 +299,10 @@ body::-webkit-scrollbar-thumb {
   .logo-text{
     width: 128px;
     height: 35px;
-    
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
-    
-    
     color: #D8C3A5;
   }
 
