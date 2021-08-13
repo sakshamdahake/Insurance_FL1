@@ -16,8 +16,17 @@ body {
     color: #FCA737;
 }
 
-.bg-color{
+.bg-color1{
+    background-color: #EBEADB;
+}
+
+.bg-color2{
     background-color: #EAE7DC;
+}
+
+
+.heading-color{
+    color: #E85A4F;
 }
 
 .section-heading-text{
@@ -31,10 +40,17 @@ body {
     color: #E85A4F;
 }
 
-.heading-bar{
+.heading-bar1{
     width: 184px;
     height: 0px;
     border: 8px solid #D8C3A5;
+    background-color: #D8C3A5;
+}
+
+.heading-bar2{
+    width: 184px;
+    height: 0px;
+    border: 4px solid #D8C3A5;
     background-color: #D8C3A5;
 }
 
@@ -58,18 +74,12 @@ body {
 
  @media  (min-width: 992px){
 
-    .container-h{
-        /* height: 720px; */
-    }
+    /* .container-h{
+        height: 720px;
+    } */
 
     .section-heading-text{
         margin-top: 150px;
-    }
-
-    .card{
-        margin-top: 50px;
-        height: 250px;
-        width: 400px;
     }
 
  }
